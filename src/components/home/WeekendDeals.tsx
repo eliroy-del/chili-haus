@@ -1,4 +1,3 @@
-import { Badge } from "@/components/ui/Badge";
 import { Container } from "@/components/ui/Container";
 import { LinkButton } from "@/components/ui/LinkButton";
 import { Reveal } from "@/components/ui/Reveal";
