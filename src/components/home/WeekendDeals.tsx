@@ -31,8 +31,7 @@ export function WeekendDeals() {
       <Container className="relative">
         <Reveal>
           <div className="max-w-3xl text-cream">
-            <Badge tone="gold">{promo.title}</Badge>
-            <h2 className="mt-4 font-display text-4xl leading-tight tracking-tight sm:text-5xl lg:text-6xl">
+            <h2 className="font-display text-4xl leading-tight tracking-tight sm:text-5xl lg:text-6xl">
               {promo.title}
             </h2>
             {promo.subtitle ? (
