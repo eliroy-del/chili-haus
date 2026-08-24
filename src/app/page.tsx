@@ -3,7 +3,6 @@ import { Categories } from "@/components/home/Categories";
 import { CategoryNav } from "@/components/home/CategoryNav";
 import {
   Kitchen,
-  SocialProof,
   WhatsAppCTA,
 } from "@/components/home/ClosingSections";
 import { FeaturedProducts } from "@/components/home/FeaturedProducts";
@@ -35,7 +34,6 @@ export default function HomePage() {
       <MealPackages />
       <WeekendDeals />
       <BulkOrders />
-      <SocialProof />
       <Kitchen />
       <WhatsAppCTA />
     </>
