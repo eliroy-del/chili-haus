@@ -5,6 +5,7 @@ import { Container } from "@/components/ui/Container";
 import { LinkButton } from "@/components/ui/LinkButton";
 import { Reveal } from "@/components/ui/Reveal";
 import { SectionHeading } from "@/components/ui/SectionHeading";
+import { mealImages } from "@/data/images";
 import { sauceHeatLevels, sauces } from "@/data/sauces";
 import { formatPrice } from "@/lib/format";
 import { cn } from "@/lib/utils";
@@ -89,8 +90,8 @@ export function Sauces() {
           <Reveal delay={100} className="lg:col-span-6">
             <div className="relative mx-auto aspect-square max-w-md overflow-hidden rounded-[2rem] border border-white/15 shadow-2xl">
               <Image
-                src="/images/products/sauces-flyer.jpg"
-                alt="Chili Haus sauces jars and black sauce"
+                src={mealImages.sauces}
+                alt="Chili Haus black sauces in jars and bowl"
                 fill
                 sizes="(max-width: 1024px) 90vw, 420px"
                 className="object-cover"

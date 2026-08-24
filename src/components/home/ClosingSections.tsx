@@ -3,6 +3,7 @@ import { LinkButton } from "@/components/ui/LinkButton";
 import { Reveal } from "@/components/ui/Reveal";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { occasions } from "@/data/categories";
+import { mealImages } from "@/data/images";
 import { businessConfig } from "@/lib/config";
 import { whatsappOrderLink } from "@/lib/whatsapp";
 import Image from "next/image";
@@ -93,20 +94,20 @@ export function Kitchen() {
         <div className="mt-8 grid grid-cols-2 gap-3 md:grid-cols-4">
           {[
             {
-              src: "/images/products/meal-packages-flyer.jpg",
-              alt: "Chili Haus jollof and chicken meal pan",
+              src: mealImages.jollofChicken,
+              alt: "Chili Haus jollof and roasted chicken",
             },
             {
-              src: "/images/products/sauces-flyer.jpg",
+              src: mealImages.sauces,
               alt: "Chili Haus sauces and shito",
             },
             {
-              src: "/images/products/frozen-foods-flyer.jpg",
-              alt: "Chili Haus frozen spring rolls and samosas",
+              src: mealImages.springRolls,
+              alt: "Chili Haus spring rolls",
             },
             {
-              src: "/images/products/lunch-basket-flyer.jpg",
-              alt: "Chili Haus lunch basket spread",
+              src: mealImages.lunchPlate,
+              alt: "Chili Haus plated lunch",
             },
           ].map((item, index) => (
             <Reveal key={item.src} delay={index * 60}>

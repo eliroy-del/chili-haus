@@ -1,3 +1,4 @@
+import { mealImages } from "@/data/images";
 import type { LunchBasket, MealPackageTier } from "@/data/types";
 
 export const lunchBaskets: LunchBasket[] = [
@@ -18,7 +19,7 @@ export const lunchBaskets: LunchBasket[] = [
       "Fruit Juice",
       "Potato Snack",
     ],
-    image: "/images/products/lunch-basket-flyer.jpg",
+    image: mealImages.lunchPlate,
   },
   {
     id: "hungry-man-basket",
@@ -41,7 +42,7 @@ export const lunchBaskets: LunchBasket[] = [
       "Fruit Juice",
       "Distilled Water",
     ],
-    image: "/images/products/lunch-basket-flyer.jpg",
+    image: mealImages.jollofChicken,
   },
   {
     id: "odehye3-basket",
@@ -66,7 +67,7 @@ export const lunchBaskets: LunchBasket[] = [
       "Fruit Juice",
       "Special Snack",
     ],
-    image: "/images/products/lunch-basket-flyer.jpg",
+    image: mealImages.noodles,
   },
 ];
 

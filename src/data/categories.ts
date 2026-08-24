@@ -1,3 +1,4 @@
+import { mealImages } from "@/data/images";
 import type { Category } from "@/data/types";
 
 export const navCategories: Category[] = [
@@ -21,49 +22,49 @@ export const showcaseCategories: Category[] = [
     label: "Local Favourites",
     description: "Authentic Ghanaian meals prepared with rich flavour.",
     href: "#local-continental",
-    image: "/images/products/meal-packages-flyer.jpg",
+    image: mealImages.jollofChicken,
   },
   {
     id: "continental",
     label: "Continental Meals",
     description: "International-inspired dishes and combinations.",
     href: "#local-continental",
-    image: "/images/products/weekend-deals-flyer.jpg",
+    image: mealImages.noodles,
   },
   {
     id: "freezer",
     label: "Freezer Friendly",
     description: "Meals, soups and stews prepared for convenient storage.",
     href: "#freezer",
-    image: "/images/products/freezer-stews-flyer.jpg",
+    image: mealImages.freezerStews,
   },
   {
     id: "baked",
     label: "Baked Foods",
     description: "Spring rolls, samosas, pies, pizza, yam balls and more.",
     href: "#frozen",
-    image: "/images/products/frozen-foods-flyer.jpg",
+    image: mealImages.springRolls,
   },
   {
     id: "sauces",
     label: "Sauces & Shito",
     description: "Chili Haus sauces and shito for home and commercial use.",
     href: "#sauces",
-    image: "/images/products/sauces-flyer.jpg",
+    image: mealImages.sauces,
   },
   {
     id: "meal-pack",
     label: "Meal Packages",
     description: "Prepared meal combinations for individuals, families and events.",
     href: "#meal-packages",
-    image: "/images/products/meal-packages-flyer.jpg",
+    image: mealImages.tilapiaJollof,
   },
   {
     id: "bulk",
     label: "Bulk Orders",
     description: "Large portions for parties, offices, celebrations and special occasions.",
     href: "#bulk",
-    image: "/images/products/lunch-basket-flyer.jpg",
+    image: mealImages.lunchPlate,
   },
 ];
 

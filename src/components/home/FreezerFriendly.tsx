@@ -4,6 +4,7 @@ import { Container } from "@/components/ui/Container";
 import { LinkButton } from "@/components/ui/LinkButton";
 import { Reveal } from "@/components/ui/Reveal";
 import { SectionHeading } from "@/components/ui/SectionHeading";
+import { mealImages } from "@/data/images";
 import { freezerStews } from "@/data/products";
 import { whatsappOrderLink } from "@/lib/whatsapp";
 import Image from "next/image";
@@ -19,8 +20,8 @@ export function FreezerFriendly() {
           <Reveal className="lg:col-span-5">
             <div className="relative aspect-[4/5] overflow-hidden rounded-3xl">
               <Image
-                src="/images/products/freezer-stews-flyer.jpg"
-                alt="Chili Haus freezer-friendly stews"
+                src={mealImages.freezerStews}
+                alt="Chili Haus freezer-friendly stews in takeaway containers"
                 fill
                 sizes="(max-width: 1024px) 100vw, 40vw"
                 className="object-cover"

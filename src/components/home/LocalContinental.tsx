@@ -3,6 +3,7 @@ import { Container } from "@/components/ui/Container";
 import { Reveal } from "@/components/ui/Reveal";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { localContinentalItems } from "@/data/categories";
+import { mealImages } from "@/data/images";
 import Image from "next/image";
 
 export function LocalContinental() {
@@ -42,8 +43,8 @@ export function LocalContinental() {
           <Reveal delay={100} className="lg:col-span-6">
             <div className="relative aspect-[4/5] overflow-hidden rounded-3xl sm:aspect-[5/4] lg:aspect-square">
               <Image
-                src="/images/products/weekend-deals-flyer.jpg"
-                alt="Chili Haus rice trays and noodles"
+                src={mealImages.tilapiaJollof}
+                alt="Grilled tilapia with Chili Haus jollof rice"
                 fill
                 sizes="(max-width: 1024px) 100vw, 40vw"
                 className="object-cover object-center"

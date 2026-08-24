@@ -1,3 +1,4 @@
+import { mealImages } from "@/data/images";
 import { LinkButton } from "@/components/ui/LinkButton";
 import { WhatsAppButton } from "@/components/ui/WhatsAppButton";
 import { businessConfig } from "@/lib/config";
@@ -9,15 +10,15 @@ export function Hero() {
     <section className="relative overflow-hidden">
       <div className="absolute inset-0">
         <Image
-          src="/images/products/meal-packages-flyer.jpg"
-          alt="Chili Haus jollof and grilled chicken meal"
+          src={mealImages.hero}
+          alt="Chili Haus jollof rice, roasted chicken, plantain and shito"
           fill
           priority
           sizes="100vw"
-          className="object-cover object-[center_30%]"
+          className="object-cover object-[center_40%]"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-dark via-dark/80 to-dark/35" />
-        <div className="absolute inset-0 bg-gradient-to-t from-dark via-transparent to-dark/40" />
+        <div className="absolute inset-0 bg-gradient-to-r from-dark/95 via-dark/70 to-dark/25" />
+        <div className="absolute inset-0 bg-gradient-to-t from-dark/80 via-transparent to-dark/35" />
       </div>
 
       <div className="relative mx-auto flex min-h-[88vh] max-w-7xl flex-col justify-end px-4 pb-16 pt-28 sm:px-6 sm:pb-20 lg:justify-center lg:px-8 lg:pb-24 lg:pt-32">

@@ -3,6 +3,7 @@ import { Container } from "@/components/ui/Container";
 import { LinkButton } from "@/components/ui/LinkButton";
 import { Reveal } from "@/components/ui/Reveal";
 import { SectionHeading } from "@/components/ui/SectionHeading";
+import { mealImages } from "@/data/images";
 import { soupCategories, swallowOptions } from "@/data/soups";
 import { formatPrice } from "@/lib/format";
 import { whatsappOrderLink } from "@/lib/whatsapp";
@@ -28,8 +29,8 @@ export function Soups() {
             </div>
             <div className="relative mt-8 aspect-[4/3] overflow-hidden rounded-3xl">
               <Image
-                src="/images/products/freezer-soups-flyer.jpg"
-                alt="Chili Haus freezer-friendly soups"
+                src={mealImages.soup}
+                alt="Bowl of Chili Haus Ghanaian soup with chicken"
                 fill
                 sizes="(max-width: 1024px) 100vw, 40vw"
                 className="object-cover"

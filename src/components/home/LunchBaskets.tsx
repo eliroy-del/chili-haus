@@ -3,6 +3,7 @@ import { Container } from "@/components/ui/Container";
 import { LinkButton } from "@/components/ui/LinkButton";
 import { Reveal } from "@/components/ui/Reveal";
 import { SectionHeading } from "@/components/ui/SectionHeading";
+import { mealImages } from "@/data/images";
 import { lunchBaskets } from "@/data/packages";
 import { whatsappOrderLink } from "@/lib/whatsapp";
 import Image from "next/image";
@@ -37,7 +38,7 @@ export function LunchBaskets() {
               <article className="flex h-full flex-col overflow-hidden rounded-3xl bg-dark text-cream">
                 <div className="relative aspect-[16/10]">
                   <Image
-                    src={basket.image ?? "/images/products/lunch-basket-flyer.jpg"}
+                    src={basket.image ?? mealImages.lunchPlate}
                     alt={basket.name}
                     fill
                     sizes="(max-width: 1024px) 100vw, 33vw"

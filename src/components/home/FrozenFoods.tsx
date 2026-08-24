@@ -4,6 +4,7 @@ import { LinkButton } from "@/components/ui/LinkButton";
 import { Reveal } from "@/components/ui/Reveal";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { frozenFoods } from "@/data/frozen";
+import { mealImages } from "@/data/images";
 import { formatPrice } from "@/lib/format";
 import { whatsappOrderLink } from "@/lib/whatsapp";
 import Image from "next/image";
@@ -31,8 +32,8 @@ export function FrozenFoods() {
           <Reveal className="lg:col-span-4">
             <div className="relative min-h-[320px] overflow-hidden rounded-3xl lg:h-full">
               <Image
-                src="/images/products/frozen-foods-flyer.jpg"
-                alt="Chili Haus frozen spring rolls and samosas"
+                src={mealImages.springRolls}
+                alt="Golden Chili Haus spring rolls with dipping sauce"
                 fill
                 sizes="(max-width: 1024px) 100vw, 33vw"
                 className="object-cover"

@@ -2,6 +2,7 @@ import { Badge } from "@/components/ui/Badge";
 import { Container } from "@/components/ui/Container";
 import { LinkButton } from "@/components/ui/LinkButton";
 import { Reveal } from "@/components/ui/Reveal";
+import { mealImages } from "@/data/images";
 import { getActivePromotions } from "@/data/promotions";
 import { whatsappOrderLink } from "@/lib/whatsapp";
 import Image from "next/image";
@@ -17,7 +18,7 @@ export function WeekendDeals() {
     >
       <div className="absolute inset-0">
         <Image
-          src="/images/products/weekend-deals-flyer.jpg"
+          src={mealImages.jollofChicken}
           alt=""
           fill
           sizes="100vw"
