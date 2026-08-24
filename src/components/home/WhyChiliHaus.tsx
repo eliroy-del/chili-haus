@@ -1,6 +1,5 @@
 import { Container } from "@/components/ui/Container";
 import { Reveal } from "@/components/ui/Reveal";
-import { SectionHeading } from "@/components/ui/SectionHeading";
 import { whyChiliHaus } from "@/data/categories";
 import {
   HandPlatter,
@@ -22,29 +21,27 @@ const icons = {
 
 export function WhyChiliHaus() {
   return (
-    <section id="why" className="scroll-mt-28 bg-white py-16 sm:py-20 lg:py-24">
+    <section id="why" className="scroll-mt-28 bg-white py-8 sm:py-10 lg:py-12">
       <Container>
         <Reveal>
-          <SectionHeading
-            title="Why People Choose Chili Haus"
-            align="center"
-            className="mx-auto"
-          />
+          <h2 className="text-center font-display text-2xl tracking-tight text-dark sm:text-3xl lg:text-4xl">
+            Why People Choose Chili Haus
+          </h2>
         </Reveal>
 
-        <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {whyChiliHaus.map((item, index) => {
             const Icon = icons[item.id as keyof typeof icons];
             return (
-              <Reveal key={item.id} delay={index * 60}>
-                <div className="h-full border-l-2 border-chili-red/30 pl-5">
-                  <div className="mb-3 inline-flex size-10 items-center justify-center rounded-full bg-chili-red/10 text-chili-red">
-                    <Icon className="size-5" aria-hidden />
+              <Reveal key={item.id} delay={index * 40}>
+                <div className="h-full border-l-2 border-chili-red/30 pl-4">
+                  <div className="mb-2 inline-flex size-8 items-center justify-center rounded-full bg-chili-red/10 text-chili-red">
+                    <Icon className="size-4" aria-hidden />
                   </div>
-                  <h3 className="text-lg font-semibold text-dark">
+                  <h3 className="text-base font-semibold text-dark">
                     {item.title}
                   </h3>
-                  <p className="mt-2 text-sm leading-relaxed text-muted">
+                  <p className="mt-1 text-sm leading-snug text-muted">
                     {item.description}
                   </p>
                 </div>
