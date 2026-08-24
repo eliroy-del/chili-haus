@@ -2,7 +2,6 @@ import { BulkOrders } from "@/components/home/BulkOrders";
 import { Categories } from "@/components/home/Categories";
 import { CategoryNav } from "@/components/home/CategoryNav";
 import {
-  Delivery,
   Kitchen,
   SocialProof,
   WhatsAppCTA,
@@ -37,7 +36,6 @@ export default function HomePage() {
       <WeekendDeals />
       <BulkOrders />
       <SocialProof />
-      <Delivery />
       <Kitchen />
       <WhatsAppCTA />
     </>

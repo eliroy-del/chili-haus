@@ -97,9 +97,7 @@ export function Footer() {
                 </a>
               </li>
               <li>
-                <a href="#delivery" className="hover:text-white">
-                  Delivery · Accra (fee applies)
-                </a>
+                <span>Delivery · Accra (fee applies)</span>
               </li>
               <li>MoMo · {businessConfig.phones.momoDisplay}</li>
             </ul>
