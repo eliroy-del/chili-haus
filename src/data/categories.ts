@@ -5,7 +5,6 @@ export const navCategories: Category[] = [
   { id: "all", label: "All Meals", href: "#menu" },
   { id: "local", label: "Local Meals", href: "#local-continental" },
   { id: "continental", label: "Continental", href: "#local-continental" },
-  { id: "lunch", label: "Lunch Baskets", href: "#lunch" },
   { id: "meal-pack", label: "Meal Packs", href: "#meal-packages" },
   { id: "freezer", label: "Freezer Friendly", href: "#freezer" },
   { id: "soups", label: "Soups", href: "#soups" },
