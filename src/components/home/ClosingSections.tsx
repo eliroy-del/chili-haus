@@ -1,69 +1,7 @@
 import { Container } from "@/components/ui/Container";
 import { LinkButton } from "@/components/ui/LinkButton";
 import { Reveal } from "@/components/ui/Reveal";
-import { SectionHeading } from "@/components/ui/SectionHeading";
-import { mealImages } from "@/data/images";
-import { businessConfig } from "@/lib/config";
 import { whatsappOrderLink } from "@/lib/whatsapp";
-import Image from "next/image";
-
-export function Kitchen() {
-  return (
-    <section className="py-16 sm:py-20 lg:py-24">
-      <Container>
-        <Reveal>
-          <div className="flex flex-col items-start justify-between gap-6 sm:flex-row sm:items-end">
-            <SectionHeading
-              title="From the Chili Haus Kitchen"
-              description="Follow along for specials, trays and behind-the-scenes flavour."
-            />
-            <LinkButton
-              href={businessConfig.social.instagramUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              variant="outline"
-            >
-              Follow @{businessConfig.social.instagram}
-            </LinkButton>
-          </div>
-        </Reveal>
-
-        <div className="mt-8 grid grid-cols-2 gap-3 md:grid-cols-4">
-          {[
-            {
-              src: mealImages.jollofChicken,
-              alt: "Chili Haus jollof and roasted chicken",
-            },
-            {
-              src: mealImages.sauces,
-              alt: "Chili Haus sauces and shito",
-            },
-            {
-              src: mealImages.springRolls,
-              alt: "Chili Haus spring rolls",
-            },
-            {
-              src: mealImages.lunchPlate,
-              alt: "Chili Haus plated lunch",
-            },
-          ].map((item, index) => (
-            <Reveal key={item.src} delay={index * 60}>
-              <div className="relative aspect-square overflow-hidden rounded-2xl">
-                <Image
-                  src={item.src}
-                  alt={item.alt}
-                  fill
-                  sizes="(max-width: 768px) 50vw, 25vw"
-                  className="object-cover"
-                />
-              </div>
-            </Reveal>
-          ))}
-        </div>
-      </Container>
-    </section>
-  );
-}
 
 export function WhatsAppCTA() {
   return (
