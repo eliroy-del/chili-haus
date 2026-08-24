@@ -38,37 +38,6 @@ export function SocialProof() {
   );
 }
 
-export function Delivery() {
-  return (
-    <section id="delivery" className="scroll-mt-28 bg-white py-16 sm:py-20">
-      <Container>
-        <Reveal>
-          <div className="grid items-center gap-8 rounded-[2rem] border border-dark/10 bg-cream px-6 py-10 sm:px-10 lg:grid-cols-2">
-            <div>
-              <SectionHeading
-                eyebrow="Delivery"
-                title="Delivery Available"
-                description={businessConfig.deliveryNote}
-              />
-            </div>
-            <div className="flex flex-wrap gap-3 lg:justify-end">
-              <LinkButton
-                href={whatsappOrderLink()}
-                target="_blank"
-                rel="noopener noreferrer"
-                variant="whatsapp"
-                size="lg"
-              >
-                Order on WhatsApp
-              </LinkButton>
-            </div>
-          </div>
-        </Reveal>
-      </Container>
-    </section>
-  );
-}
-
 export function Kitchen() {
   return (
     <section className="py-16 sm:py-20 lg:py-24">
