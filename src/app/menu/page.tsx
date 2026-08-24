@@ -1,5 +1,7 @@
 import { FreezerMenu } from "@/components/menu/FreezerMenu";
+import { FrozenFoodsMenu } from "@/components/menu/FrozenFoodsMenu";
 import { SaucesMenu } from "@/components/menu/SaucesMenu";
+import { SoupsMenu } from "@/components/menu/SoupsMenu";
 import { Container } from "@/components/ui/Container";
 import { Reveal } from "@/components/ui/Reveal";
 import type { Metadata } from "next";
@@ -7,7 +9,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Menu",
   description:
-    "Browse Chili Haus freezer-friendly stews, sauces and shito. Order directly on WhatsApp for Accra delivery and pickup.",
+    "Browse Chili Haus soups, freezer stews, frozen foods, sauces and shito. Order directly on WhatsApp for Accra delivery and pickup.",
   alternates: {
     canonical: "/menu",
   },
@@ -26,14 +28,16 @@ export default function MenuPage() {
               Order from the Menu
             </h1>
             <p className="mt-1 max-w-2xl text-sm text-muted">
-              Freezer-friendly stews, sauces and shito — tap WhatsApp on any
-              item to order.
+              Soups, freezer stews, frozen foods, sauces and shito — tap
+              WhatsApp on any item to order.
             </p>
           </Reveal>
         </Container>
       </section>
 
+      <SoupsMenu />
       <FreezerMenu />
+      <FrozenFoodsMenu />
       <SaucesMenu />
     </>
   );

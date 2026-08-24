@@ -7,10 +7,10 @@ export const navCategories: Category[] = [
   { id: "continental", label: "Continental", href: "/#menu" },
   { id: "meal-pack", label: "Meal Packs", href: "/#meal-packages" },
   { id: "freezer", label: "Freezer Friendly", href: "/menu#freezer" },
-  { id: "soups", label: "Soups", href: "/#soups" },
+  { id: "soups", label: "Soups", href: "/menu#soups" },
   { id: "stews", label: "Stews", href: "/menu#freezer" },
-  { id: "frozen", label: "Frozen Foods", href: "/#frozen" },
-  { id: "baked", label: "Baked Foods", href: "/#frozen" },
+  { id: "frozen", label: "Frozen Foods", href: "/menu#frozen" },
+  { id: "baked", label: "Baked Foods", href: "/menu#frozen" },
   { id: "sauces", label: "Sauces & Shito", href: "/menu#sauces" },
 ];
 
@@ -40,7 +40,7 @@ export const showcaseCategories: Category[] = [
     id: "baked",
     label: "Baked Foods",
     description: "Spring rolls, samosas, pies, pizza, yam balls and more.",
-    href: "/#frozen",
+    href: "/menu#frozen",
     image: mealImages.springRolls,
   },
   {

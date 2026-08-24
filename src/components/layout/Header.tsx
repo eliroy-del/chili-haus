@@ -22,7 +22,9 @@ const navLinks: NavItem[] = [
     href: "/menu",
     label: "Menu",
     children: [
+      { href: "/menu#soups", label: "Soups" },
       { href: "/menu#freezer", label: "Freezer Friendly" },
+      { href: "/menu#frozen", label: "Frozen Foods" },
       { href: "/menu#sauces", label: "Sauces & Shito" },
       { href: "/#meal-packages", label: "Meal Packages" },
     ],
