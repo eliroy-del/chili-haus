@@ -4,7 +4,7 @@ import { Container } from "@/components/ui/Container";
 import { LinkButton } from "@/components/ui/LinkButton";
 import { Reveal } from "@/components/ui/Reveal";
 import { mealImages } from "@/data/images";
-import { sauceHeatLevels, sauces } from "@/data/sauces";
+import { sauces } from "@/data/sauces";
 import { formatPrice } from "@/lib/format";
 import { cn } from "@/lib/utils";
 import { whatsappOrderLink } from "@/lib/whatsapp";
