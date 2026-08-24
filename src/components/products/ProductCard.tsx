@@ -48,7 +48,7 @@ export function ProductCard({ product, className, compact }: ProductCardProps) {
       <div
         className={cn(
           "relative overflow-hidden bg-cream-deep",
-          compact ? "aspect-[4/3]" : "aspect-[5/4]",
+          compact ? "aspect-[4/3]" : "aspect-[4/3]",
         )}
       >
         {product.image ? (
@@ -63,7 +63,7 @@ export function ProductCard({ product, className, compact }: ProductCardProps) {
           <div className="absolute inset-0 texture-warm" />
         )}
         <div className="absolute inset-0 bg-gradient-to-t from-dark/35 via-transparent to-transparent" />
-        <div className="absolute left-3 top-3 flex flex-wrap gap-2">
+        <div className="absolute left-2.5 top-2.5 flex flex-wrap gap-1.5">
           <Badge tone="dark">{product.category.replace("-", " ")}</Badge>
           {status !== "available" ? (
             <Badge tone={statusTone[status]}>{statusLabels[status]}</Badge>
@@ -71,13 +71,13 @@ export function ProductCard({ product, className, compact }: ProductCardProps) {
         </div>
       </div>
 
-      <div className="flex flex-1 flex-col gap-3 p-4 sm:p-5">
-        <div className="space-y-1.5">
-          <h3 className="text-lg font-semibold tracking-tight text-dark">
+      <div className="flex flex-1 flex-col gap-2 p-3.5 sm:p-4">
+        <div className="space-y-1">
+          <h3 className="text-base font-semibold tracking-tight text-dark">
             {product.name}
           </h3>
           {product.description ? (
-            <p className="line-clamp-2 text-sm leading-relaxed text-muted">
+            <p className="line-clamp-2 text-xs leading-snug text-muted sm:text-sm">
               {product.description}
             </p>
           ) : null}
@@ -88,6 +88,7 @@ export function ProductCard({ product, className, compact }: ProductCardProps) {
             price={product.price}
             priceRange={product.priceRange}
             from={Boolean(product.sizes?.length)}
+            size="sm"
           />
           <LinkButton
             href={href}
