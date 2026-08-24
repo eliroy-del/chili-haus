@@ -11,7 +11,7 @@ export const navCategories: Category[] = [
   { id: "stews", label: "Stews", href: "/menu#freezer" },
   { id: "frozen", label: "Frozen Foods", href: "/#frozen" },
   { id: "baked", label: "Baked Foods", href: "/#frozen" },
-  { id: "sauces", label: "Sauces & Shito", href: "/#sauces" },
+  { id: "sauces", label: "Sauces & Shito", href: "/menu#sauces" },
 ];
 
 export const showcaseCategories: Category[] = [
@@ -47,7 +47,7 @@ export const showcaseCategories: Category[] = [
     id: "sauces",
     label: "Sauces & Shito",
     description: "Chili Haus sauces and shito for home and commercial use.",
-    href: "/#sauces",
+    href: "/menu#sauces",
     image: mealImages.sauces,
   },
   {

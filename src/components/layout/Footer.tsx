@@ -6,11 +6,11 @@ import type { SVGProps } from "react";
 
 const explore = [
   { href: "/", label: "Home" },
-  { href: "/menu", label: "Menu" },
-  { href: "/#meal-packages", label: "Meal Packages" },
-  { href: "/menu#freezer", label: "Freezer Friendly" },
-  { href: "/#frozen", label: "Frozen Foods" },
-  { href: "/#sauces", label: "Sauces & Shito" },
+      { href: "/menu", label: "Menu" },
+      { href: "/#meal-packages", label: "Meal Packages" },
+      { href: "/menu#freezer", label: "Freezer Friendly" },
+      { href: "/#frozen", label: "Frozen Foods" },
+      { href: "/menu#sauces", label: "Sauces & Shito" },
 ];
 
 function InstagramIcon(props: SVGProps<SVGSVGElement>) {

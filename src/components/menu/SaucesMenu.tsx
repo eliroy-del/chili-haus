@@ -3,6 +3,7 @@
 import { Container } from "@/components/ui/Container";
 import { LinkButton } from "@/components/ui/LinkButton";
 import { Reveal } from "@/components/ui/Reveal";
+import { WhatsAppIcon } from "@/components/ui/WhatsAppIcon";
 import { mealImages } from "@/data/images";
 import { sauces } from "@/data/sauces";
 import { formatPrice } from "@/lib/format";
@@ -11,27 +12,27 @@ import { whatsappOrderLink } from "@/lib/whatsapp";
 import Image from "next/image";
 import { useState } from "react";
 
-export function Sauces() {
+export function SaucesMenu() {
   const [activeId, setActiveId] = useState(sauces[0].id);
   const active = sauces.find((s) => s.id === activeId) ?? sauces[0];
 
   return (
     <section
       id="sauces"
-      className="scroll-mt-28 overflow-hidden texture-red py-8 text-cream sm:py-10 lg:py-12"
+      className="scroll-mt-28 overflow-hidden texture-red py-6 text-cream sm:py-8 lg:py-10"
     >
       <Container>
-        <div className="grid items-center gap-5 lg:grid-cols-12 lg:gap-8">
+        <div className="grid items-center gap-5 lg:grid-cols-12 lg:gap-6">
           <Reveal className="lg:col-span-7">
-            <h2 className="font-display text-2xl tracking-tight sm:text-3xl lg:text-4xl">
+            <h2 className="font-display text-2xl tracking-tight sm:text-3xl">
               Bring the Heat Home.
             </h2>
-            <p className="mt-1.5 max-w-xl text-sm text-cream/80">
+            <p className="mt-1 max-w-xl text-sm text-cream/80">
               Take the Chili Haus flavour beyond the plate with our sauces,
               shito and specialty blends.
             </p>
 
-            <div className="mt-4 flex flex-wrap gap-1.5">
+            <div className="mt-3 flex flex-wrap gap-1.5">
               {sauces.map((sauce) => (
                 <button
                   key={sauce.id}
@@ -49,21 +50,27 @@ export function Sauces() {
               ))}
             </div>
 
-            <div className="mt-3 overflow-hidden rounded-xl border border-white/15 bg-dark/20">
-              <ul className="divide-y divide-white/10">
-                {active.sizes.map((size) => (
-                  <li
-                    key={size.label}
-                    className="flex items-center justify-between gap-3 px-3.5 py-2 text-sm"
+            <ul className="mt-3 divide-y divide-white/10 overflow-hidden rounded-xl border border-white/15 bg-dark/20">
+              {active.sizes.map((size) => (
+                <li key={size.label}>
+                  <a
+                    href={whatsappOrderLink(`${active.name} — ${size.label}`)}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="group flex items-center gap-2 px-3 py-1.5 text-sm transition hover:bg-white/10 focus-visible:bg-white/10 focus-visible:outline-none"
+                    aria-label={`Order ${active.name} ${size.label} on WhatsApp`}
                   >
-                    <span>{size.label}</span>
-                    <span className="font-semibold text-chili-gold">
+                    <span className="min-w-0 flex-1">{size.label}</span>
+                    <span className="shrink-0 text-xs font-semibold text-chili-gold sm:text-sm">
                       {formatPrice(size.price)}
                     </span>
-                  </li>
-                ))}
-              </ul>
-            </div>
+                    <span className="inline-flex size-7 shrink-0 items-center justify-center rounded-full bg-whatsapp text-white transition group-hover:bg-whatsapp-dark">
+                      <WhatsAppIcon className="size-3.5" />
+                    </span>
+                  </a>
+                </li>
+              ))}
+            </ul>
 
             <LinkButton
               href={whatsappOrderLink(active.name)}
@@ -71,14 +78,14 @@ export function Sauces() {
               rel="noopener noreferrer"
               variant="whatsapp"
               size="md"
-              className="mt-4"
+              className="mt-3"
             >
               Shop Sauces & Shito
             </LinkButton>
           </Reveal>
 
-          <Reveal delay={80} className="lg:col-span-5">
-            <div className="relative mx-auto aspect-square max-w-xs overflow-hidden rounded-2xl border border-white/15 shadow-xl sm:max-w-sm lg:max-w-none">
+          <Reveal delay={60} className="lg:col-span-5">
+            <div className="relative mx-auto aspect-square max-w-xs overflow-hidden rounded-xl border border-white/15 shadow-xl sm:max-w-sm lg:max-w-none">
               <Image
                 src={mealImages.sauces}
                 alt="Chili Haus black sauces in jars and bowl"

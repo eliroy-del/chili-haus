@@ -22,8 +22,9 @@ const navLinks: NavItem[] = [
     href: "/menu",
     label: "Menu",
     children: [
-      { href: "/#meal-packages", label: "Meal Packages" },
       { href: "/menu#freezer", label: "Freezer Friendly" },
+      { href: "/menu#sauces", label: "Sauces & Shito" },
+      { href: "/#meal-packages", label: "Meal Packages" },
     ],
   },
   { href: "/#why", label: "About" },
