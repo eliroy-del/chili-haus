@@ -2,6 +2,7 @@ import { cn } from "@/lib/utils";
 import type { AnchorHTMLAttributes, ReactNode } from "react";
 import { buttonVariants } from "@/components/ui/button-variants";
 import type { ButtonSize, ButtonVariant } from "@/components/ui/Button";
+import { WhatsAppIcon } from "@/components/ui/WhatsAppIcon";
 
 interface LinkButtonProps extends AnchorHTMLAttributes<HTMLAnchorElement> {
   variant?: ButtonVariant;
@@ -21,6 +22,7 @@ export function LinkButton({
       className={cn(buttonVariants({ variant, size }), className)}
       {...props}
     >
+      {variant === "whatsapp" ? <WhatsAppIcon className="size-4" /> : null}
       {children}
     </a>
   );

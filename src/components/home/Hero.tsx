@@ -35,7 +35,7 @@ export function Hero() {
 
           <div className="mt-6 flex flex-wrap items-center gap-3">
             <WhatsAppButton label="Order on WhatsApp" size="md" />
-            <LinkButton href="#menu" variant="outline" size="md" className="border-cream/25 bg-white/10 text-cream hover:bg-white/15 hover:text-cream">
+            <LinkButton href="/menu" variant="outline" size="md" className="border-cream/25 bg-white/10 text-cream hover:bg-white/15 hover:text-cream">
               Explore Our Menu
             </LinkButton>
           </div>

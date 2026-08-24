@@ -5,7 +5,7 @@ import { LinkButton } from "@/components/ui/LinkButton";
 import { businessConfig } from "@/lib/config";
 import { cn } from "@/lib/utils";
 import { whatsappOrderLink } from "@/lib/whatsapp";
-import { ChevronDown, Menu, MessageCircle, Search, X } from "lucide-react";
+import { ChevronDown, Menu, Search, X } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
@@ -19,16 +19,15 @@ type NavItem = {
 const navLinks: NavItem[] = [
   { href: "/", label: "Home" },
   {
-    href: "#menu",
+    href: "/menu",
     label: "Menu",
     children: [
-      { href: "#meal-packages", label: "Meal Packages" },
-      { href: "#freezer", label: "Freezer Friendly" },
-      { href: "#bulk", label: "Catering & Bulk" },
+      { href: "/#meal-packages", label: "Meal Packages" },
+      { href: "/menu#freezer", label: "Freezer Friendly" },
     ],
   },
-  { href: "#why", label: "About" },
-  { href: "#contact", label: "Contact" },
+  { href: "/#why", label: "About" },
+  { href: "/#contact", label: "Contact" },
 ];
 
 export function Header() {
@@ -175,7 +174,6 @@ export function Header() {
               size="sm"
               className="hidden sm:inline-flex"
             >
-              <MessageCircle className="size-4" aria-hidden />
               Order
             </LinkButton>
 
@@ -289,7 +287,6 @@ export function Header() {
               className="w-full"
               onClick={() => setOpen(false)}
             >
-              <MessageCircle className="size-4" aria-hidden />
               Order on WhatsApp
             </LinkButton>
           </div>

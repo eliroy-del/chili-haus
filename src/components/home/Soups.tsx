@@ -79,7 +79,7 @@ export function Soups() {
               href={whatsappOrderLink("Soups & Swallows")}
               target="_blank"
               rel="noopener noreferrer"
-              variant="primary"
+              variant="whatsapp"
               size="md"
               className="mt-4"
             >

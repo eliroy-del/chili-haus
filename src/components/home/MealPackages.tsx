@@ -29,7 +29,7 @@ export function MealPackages() {
               href={whatsappBulkLink()}
               target="_blank"
               rel="noopener noreferrer"
-              variant="dark"
+              variant="whatsapp"
               size="md"
             >
               Plan a Bulk Order

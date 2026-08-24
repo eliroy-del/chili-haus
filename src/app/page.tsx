@@ -1,9 +1,7 @@
-import { BulkOrders } from "@/components/home/BulkOrders";
 import { Categories } from "@/components/home/Categories";
 import { CategoryNav } from "@/components/home/CategoryNav";
 import { WhatsAppCTA } from "@/components/home/ClosingSections";
 import { FeaturedProducts } from "@/components/home/FeaturedProducts";
-import { FreezerFriendly } from "@/components/home/FreezerFriendly";
 import { FrozenFoods } from "@/components/home/FrozenFoods";
 import { Hero } from "@/components/home/Hero";
 import { MealPackages } from "@/components/home/MealPackages";
@@ -20,13 +18,11 @@ export default function HomePage() {
       <FeaturedProducts />
       <WhyChiliHaus />
       <Categories />
-      <FreezerFriendly />
       <Soups />
       <Sauces />
       <FrozenFoods />
       <MealPackages />
       <WeekendDeals />
-      <BulkOrders />
       <WhatsAppCTA />
     </>
   );

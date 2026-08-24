@@ -1,4 +1,3 @@
-import { Badge } from "@/components/ui/Badge";
 import { Container } from "@/components/ui/Container";
 import { LinkButton } from "@/components/ui/LinkButton";
 import { Reveal } from "@/components/ui/Reveal";
@@ -12,24 +11,15 @@ export function FrozenFoods() {
   return (
     <section id="frozen" className="scroll-mt-28 py-8 sm:py-10 lg:py-12">
       <Container>
-        <div className="flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
-          <Reveal>
-            <div>
-              <h2 className="font-display text-2xl tracking-tight text-dark sm:text-3xl lg:text-4xl">
-                Chili Haus Frozen Foods
-              </h2>
-              <p className="mt-1.5 max-w-2xl text-sm text-muted">
-                Spring rolls, samosas, yam balls, pies, pizza and pancake batter
-                — orders for all occasions.
-              </p>
-            </div>
-          </Reveal>
-          <Reveal delay={40}>
-            <Badge tone="red" className="w-fit shrink-0">
-              Bulk discounts available
-            </Badge>
-          </Reveal>
-        </div>
+        <Reveal>
+          <h2 className="font-display text-2xl tracking-tight text-dark sm:text-3xl lg:text-4xl">
+            Chili Haus Frozen Foods
+          </h2>
+          <p className="mt-1.5 max-w-2xl text-sm text-muted">
+            Spring rolls, samosas, yam balls, pies, pizza and pancake batter
+            — orders for all occasions.
+          </p>
+        </Reveal>
 
         <div className="mt-5 grid gap-4 lg:grid-cols-12 lg:items-start">
           <Reveal className="lg:col-span-3">
@@ -72,7 +62,7 @@ export function FrozenFoods() {
               href={whatsappOrderLink("Frozen Foods")}
               target="_blank"
               rel="noopener noreferrer"
-              variant="primary"
+              variant="whatsapp"
               size="md"
               className="mt-4"
             >

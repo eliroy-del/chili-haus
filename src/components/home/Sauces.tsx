@@ -69,9 +69,9 @@ export function Sauces() {
               href={whatsappOrderLink(active.name)}
               target="_blank"
               rel="noopener noreferrer"
-              variant="secondary"
+              variant="whatsapp"
               size="md"
-              className="mt-4 bg-cream text-dark hover:bg-white"
+              className="mt-4"
             >
               Shop Sauces & Shito
             </LinkButton>

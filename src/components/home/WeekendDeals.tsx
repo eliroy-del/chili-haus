@@ -67,9 +67,8 @@ export function WeekendDeals() {
               href={whatsappOrderLink(promo.title)}
               target="_blank"
               rel="noopener noreferrer"
-              variant="secondary"
+              variant="whatsapp"
               size="md"
-              className="bg-cream text-dark hover:bg-white"
             >
               {promo.cta}
             </LinkButton>

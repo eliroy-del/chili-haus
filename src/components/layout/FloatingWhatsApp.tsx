@@ -1,6 +1,6 @@
+import { WhatsAppIcon } from "@/components/ui/WhatsAppIcon";
 import { businessConfig } from "@/lib/config";
 import { whatsappOrderLink } from "@/lib/whatsapp";
-import { MessageCircle } from "lucide-react";
 
 export function FloatingWhatsApp() {
   return (
@@ -12,7 +12,7 @@ export function FloatingWhatsApp() {
       aria-label={`Order on WhatsApp — ${businessConfig.name}`}
       title="Order on WhatsApp"
     >
-      <MessageCircle className="size-6" aria-hidden />
+      <WhatsAppIcon className="size-7" />
     </a>
   );
 }

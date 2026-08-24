@@ -1,7 +1,6 @@
 import { LinkButton } from "@/components/ui/LinkButton";
 import { businessConfig } from "@/lib/config";
 import { whatsappOrderLink } from "@/lib/whatsapp";
-import { MessageCircle } from "lucide-react";
 
 interface WhatsAppButtonProps {
   label?: string;
@@ -27,7 +26,6 @@ export function WhatsAppButton({
       className={className}
       aria-label={`${label} — ${businessConfig.name}`}
     >
-      <MessageCircle className="size-4" aria-hidden />
       {label}
     </LinkButton>
   );
