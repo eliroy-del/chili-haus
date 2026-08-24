@@ -11,7 +11,7 @@ export function CategoryNav() {
   return (
     <section
       id="categories"
-      className="border-y border-dark/8 bg-white/60 py-4 backdrop-blur-sm"
+      className="border-y border-dark/8 bg-white/60 py-3 backdrop-blur-sm"
       aria-label="Quick categories"
     >
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">

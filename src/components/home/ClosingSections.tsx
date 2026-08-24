@@ -76,7 +76,6 @@ export function Kitchen() {
         <Reveal>
           <div className="flex flex-col items-start justify-between gap-6 sm:flex-row sm:items-end">
             <SectionHeading
-              eyebrow="Social"
               title="From the Chili Haus Kitchen"
               description="Follow along for specials, trays and behind-the-scenes flavour."
             />

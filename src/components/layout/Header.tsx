@@ -82,8 +82,8 @@ export function Header() {
               <span className="font-script text-2xl text-chili-red sm:text-[1.7rem]">
                 Chili Haus
               </span>
-              <span className="hidden text-[10px] font-medium uppercase tracking-[0.14em] text-muted sm:block">
-                Accra · Good food
+              <span className="hidden text-[10px] font-medium tracking-[0.04em] text-muted sm:block">
+                {businessConfig.tagline}
               </span>
             </span>
           </Link>

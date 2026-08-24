@@ -8,16 +8,14 @@ export function FeaturedProducts() {
   const featured = getFeaturedProducts();
 
   return (
-    <section id="menu" className="scroll-mt-28 py-16 sm:py-20 lg:py-24">
+    <section id="menu" className="scroll-mt-28 pt-8 pb-14 sm:pt-10 sm:pb-16 lg:pt-12 lg:pb-20">
       <Container>
         <Reveal>
-          <SectionHeading
-            title="What Are You Craving Today?"
-          />
+          <SectionHeading title="What Are You Craving Today?" />
         </Reveal>
-        <Reveal delay={80} className="mt-10">
-          <ProductGrid products={featured} />
-        </Reveal>
+        <div className="mt-6 sm:mt-8">
+          <ProductGrid products={featured} animate />
+        </div>
       </Container>
     </section>
   );

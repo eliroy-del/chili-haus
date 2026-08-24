@@ -60,19 +60,7 @@ export function WeekendDeals() {
         </Reveal>
 
         <Reveal delay={120}>
-          <div className="mt-8 flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
-            <div className="space-y-1 text-sm text-cream/85">
-              {promo.includes?.length ? (
-                <p>
-                  All orders come with {promo.includes.join(", ").toLowerCase()}.
-                </p>
-              ) : null}
-              {promo.notes?.map((note) => (
-                <p key={note} className="font-semibold text-chili-gold">
-                  {note}
-                </p>
-              ))}
-            </div>
+          <div className="mt-8">
             <LinkButton
               href={whatsappOrderLink(promo.title)}
               target="_blank"
