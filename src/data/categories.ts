@@ -3,8 +3,8 @@ import type { Category } from "@/data/types";
 
 export const navCategories: Category[] = [
   { id: "all", label: "All Meals", href: "#menu" },
-  { id: "local", label: "Local Meals", href: "#local-continental" },
-  { id: "continental", label: "Continental", href: "#local-continental" },
+  { id: "local", label: "Local Meals", href: "#menu" },
+  { id: "continental", label: "Continental", href: "#menu" },
   { id: "meal-pack", label: "Meal Packs", href: "#meal-packages" },
   { id: "freezer", label: "Freezer Friendly", href: "#freezer" },
   { id: "soups", label: "Soups", href: "#soups" },

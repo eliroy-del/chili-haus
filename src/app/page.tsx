@@ -6,7 +6,6 @@ import { FeaturedProducts } from "@/components/home/FeaturedProducts";
 import { FreezerFriendly } from "@/components/home/FreezerFriendly";
 import { FrozenFoods } from "@/components/home/FrozenFoods";
 import { Hero } from "@/components/home/Hero";
-import { LocalContinental } from "@/components/home/LocalContinental";
 import { MealPackages } from "@/components/home/MealPackages";
 import { Sauces } from "@/components/home/Sauces";
 import { Soups } from "@/components/home/Soups";
@@ -21,7 +20,6 @@ export default function HomePage() {
       <FeaturedProducts />
       <WhyChiliHaus />
       <Categories />
-      <LocalContinental />
       <FreezerFriendly />
       <Soups />
       <Sauces />
