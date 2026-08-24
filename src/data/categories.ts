@@ -20,14 +20,14 @@ export const showcaseCategories: Category[] = [
     id: "local",
     label: "Local Favourites",
     description: "Authentic Ghanaian meals prepared with rich flavour.",
-    href: "#local-continental",
+    href: "#menu",
     image: mealImages.jollofChicken,
   },
   {
     id: "continental",
     label: "Continental Meals",
     description: "International-inspired dishes and combinations.",
-    href: "#local-continental",
+    href: "#menu",
     image: mealImages.noodles,
   },
   {
