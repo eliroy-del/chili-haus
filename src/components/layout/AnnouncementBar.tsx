@@ -14,9 +14,10 @@ export function AnnouncementBar() {
           target="_blank"
           rel="noopener noreferrer"
           className="inline-flex shrink-0 items-center gap-1.5 font-semibold text-chili-gold transition hover:text-white"
+          aria-label={`WhatsApp ${businessConfig.phones.internationalDisplay}`}
         >
           <MessageCircle className="size-3.5" aria-hidden />
-          Order on WhatsApp
+          {businessConfig.phones.internationalDisplay}
           <span aria-hidden>→</span>
         </a>
       </div>

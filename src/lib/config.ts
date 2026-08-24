@@ -6,6 +6,7 @@ export const businessConfig = {
   phones: {
     primary: process.env.NEXT_PUBLIC_PHONE_PRIMARY ?? "0596869306",
     primaryDisplay: "059 686 9306",
+    internationalDisplay: "+233 59 686 9306",
     momo: process.env.NEXT_PUBLIC_PHONE_MOMO ?? "0543491161",
     momoDisplay: "054 349 1161",
   },

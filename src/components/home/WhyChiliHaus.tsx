@@ -26,9 +26,7 @@ export function WhyChiliHaus() {
       <Container>
         <Reveal>
           <SectionHeading
-            eyebrow="Why Chili Haus"
             title="Why People Choose Chili Haus"
-            description="Variety, convenience and flavour — prepared for everyday meals and big occasions."
             align="center"
             className="mx-auto"
           />

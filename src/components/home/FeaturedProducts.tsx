@@ -12,9 +12,7 @@ export function FeaturedProducts() {
       <Container>
         <Reveal>
           <SectionHeading
-            eyebrow="Featured favourites"
             title="What Are You Craving Today?"
-            description="Explore some of our customer favourites and order directly from Chili Haus."
           />
         </Reveal>
         <Reveal delay={80} className="mt-10">

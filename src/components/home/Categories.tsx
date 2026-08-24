@@ -10,7 +10,6 @@ export function Categories() {
       <Container>
         <Reveal>
           <SectionHeading
-            eyebrow="Browse by craving"
             title="Something for Every Craving"
             description="Meals, freezer packs, sauces, baked foods and bulk orders — pick a lane and dig in."
           />
