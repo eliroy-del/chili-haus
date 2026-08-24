@@ -27,8 +27,8 @@ export function Sauces() {
               Bring the Heat Home.
             </h2>
             <p className="mt-1.5 max-w-xl text-sm text-cream/80">
-              Sauces, shito and specialty blends —{" "}
-              {sauceHeatLevels.join(" · ")}.
+              Take the Chili Haus flavour beyond the plate with our sauces,
+              shito and specialty blends.
             </p>
 
             <div className="mt-4 flex flex-wrap gap-1.5">
