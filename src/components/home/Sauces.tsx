@@ -1,10 +1,8 @@
 "use client";
 
-import { Badge } from "@/components/ui/Badge";
 import { Container } from "@/components/ui/Container";
 import { LinkButton } from "@/components/ui/LinkButton";
 import { Reveal } from "@/components/ui/Reveal";
-import { SectionHeading } from "@/components/ui/SectionHeading";
 import { mealImages } from "@/data/images";
 import { sauceHeatLevels, sauces } from "@/data/sauces";
 import { formatPrice } from "@/lib/format";
@@ -20,33 +18,27 @@ export function Sauces() {
   return (
     <section
       id="sauces"
-      className="scroll-mt-28 overflow-hidden texture-red py-16 text-cream sm:py-20 lg:py-24"
+      className="scroll-mt-28 overflow-hidden texture-red py-8 text-cream sm:py-10 lg:py-12"
     >
       <Container>
-        <div className="grid items-center gap-10 lg:grid-cols-12">
-          <Reveal className="lg:col-span-6">
-            <SectionHeading
-              eyebrow="Sauces & shito"
-              title="Bring the Heat Home."
-              description="Take the Chili Haus flavour beyond the plate with our sauces, shito and speciality blends."
-              light
-            />
-            <div className="mt-5 flex flex-wrap gap-2">
-              {sauceHeatLevels.map((level) => (
-                <Badge key={level} tone="gold">
-                  {level}
-                </Badge>
-              ))}
-            </div>
+        <div className="grid items-center gap-5 lg:grid-cols-12 lg:gap-8">
+          <Reveal className="lg:col-span-7">
+            <h2 className="font-display text-2xl tracking-tight sm:text-3xl lg:text-4xl">
+              Bring the Heat Home.
+            </h2>
+            <p className="mt-1.5 max-w-xl text-sm text-cream/80">
+              Sauces, shito and specialty blends —{" "}
+              {sauceHeatLevels.join(" · ")}.
+            </p>
 
-            <div className="mt-8 flex flex-wrap gap-2">
+            <div className="mt-4 flex flex-wrap gap-1.5">
               {sauces.map((sauce) => (
                 <button
                   key={sauce.id}
                   type="button"
                   onClick={() => setActiveId(sauce.id)}
                   className={cn(
-                    "rounded-full border px-4 py-2 text-sm font-medium transition",
+                    "rounded-full border px-3 py-1.5 text-xs font-medium transition sm:text-sm",
                     activeId === sauce.id
                       ? "border-white bg-white text-chili-red"
                       : "border-white/25 bg-white/10 text-cream hover:bg-white/15",
@@ -57,15 +49,12 @@ export function Sauces() {
               ))}
             </div>
 
-            <div className="mt-6 overflow-hidden rounded-2xl border border-white/15 bg-dark/20">
-              <div className="border-b border-white/10 px-5 py-4">
-                <h3 className="text-lg font-semibold">{active.name}</h3>
-              </div>
+            <div className="mt-3 overflow-hidden rounded-xl border border-white/15 bg-dark/20">
               <ul className="divide-y divide-white/10">
                 {active.sizes.map((size) => (
                   <li
                     key={size.label}
-                    className="flex items-center justify-between gap-4 px-5 py-3.5"
+                    className="flex items-center justify-between gap-3 px-3.5 py-2 text-sm"
                   >
                     <span>{size.label}</span>
                     <span className="font-semibold text-chili-gold">
@@ -81,19 +70,20 @@ export function Sauces() {
               target="_blank"
               rel="noopener noreferrer"
               variant="secondary"
-              className="mt-6 bg-cream text-dark hover:bg-white"
+              size="md"
+              className="mt-4 bg-cream text-dark hover:bg-white"
             >
               Shop Sauces & Shito
             </LinkButton>
           </Reveal>
 
-          <Reveal delay={100} className="lg:col-span-6">
-            <div className="relative mx-auto aspect-square max-w-md overflow-hidden rounded-[2rem] border border-white/15 shadow-2xl">
+          <Reveal delay={80} className="lg:col-span-5">
+            <div className="relative mx-auto aspect-square max-w-xs overflow-hidden rounded-2xl border border-white/15 shadow-xl sm:max-w-sm lg:max-w-none">
               <Image
                 src={mealImages.sauces}
                 alt="Chili Haus black sauces in jars and bowl"
                 fill
-                sizes="(max-width: 1024px) 90vw, 420px"
+                sizes="(max-width: 1024px) 70vw, 320px"
                 className="object-cover"
               />
             </div>
