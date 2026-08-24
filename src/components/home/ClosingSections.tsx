@@ -2,41 +2,10 @@ import { Container } from "@/components/ui/Container";
 import { LinkButton } from "@/components/ui/LinkButton";
 import { Reveal } from "@/components/ui/Reveal";
 import { SectionHeading } from "@/components/ui/SectionHeading";
-import { occasions } from "@/data/categories";
 import { mealImages } from "@/data/images";
 import { businessConfig } from "@/lib/config";
 import { whatsappOrderLink } from "@/lib/whatsapp";
 import Image from "next/image";
-
-export function SocialProof() {
-  return (
-    <section className="py-16 sm:py-20 lg:py-24">
-      <Container>
-        <Reveal>
-          <SectionHeading
-            eyebrow="Made for real life"
-            title="Made for Everyday Cravings & Big Occasions"
-            description={`${businessConfig.name} fits weekday lunches, weekend feasts, freezer restocks and celebration tables.`}
-            align="center"
-          />
-        </Reveal>
-
-        <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-          {occasions.map((item, index) => (
-            <Reveal key={item.id} delay={index * 50}>
-              <div className="h-full rounded-2xl border border-dark/10 bg-white p-5">
-                <h3 className="text-lg font-semibold text-dark">{item.title}</h3>
-                <p className="mt-2 text-sm leading-relaxed text-muted">
-                  {item.description}
-                </p>
-              </div>
-            </Reveal>
-          ))}
-        </div>
-      </Container>
-    </section>
-  );
-}
 
 export function Kitchen() {
   return (
