@@ -13,7 +13,7 @@ export function WeekendDeals() {
   return (
     <section
       id="weekend"
-      className="scroll-mt-28 relative overflow-hidden py-16 sm:py-20 lg:py-24"
+      className="scroll-mt-28 relative overflow-hidden py-8 sm:py-10 lg:py-12"
     >
       <div className="absolute inset-0">
         <Image
@@ -29,15 +29,19 @@ export function WeekendDeals() {
 
       <Container className="relative">
         <Reveal>
-          <div className="max-w-3xl text-cream">
-            <h2 className="font-display text-4xl leading-tight tracking-tight sm:text-5xl lg:text-6xl">
-              {promo.title}
-            </h2>
-            {promo.subtitle ? (
-              <p className="mt-3 text-lg text-cream/80">{promo.subtitle}</p>
-            ) : null}
+          <div className="flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
+            <div className="max-w-2xl text-cream">
+              <h2 className="font-display text-2xl leading-tight tracking-tight sm:text-3xl lg:text-4xl">
+                {promo.title}
+              </h2>
+              {promo.subtitle ? (
+                <p className="mt-1.5 text-sm text-cream/80 sm:text-base">
+                  {promo.subtitle}
+                </p>
+              ) : null}
+            </div>
             {promo.price ? (
-              <p className="mt-6 inline-flex rounded-full bg-chili-orange px-5 py-2 text-2xl font-bold tracking-tight text-white shadow-lg">
+              <p className="inline-flex w-fit shrink-0 rounded-full bg-chili-orange px-4 py-1.5 text-lg font-bold tracking-tight text-white shadow-lg sm:text-xl">
                 {promo.price}
               </p>
             ) : null}
@@ -45,11 +49,11 @@ export function WeekendDeals() {
         </Reveal>
 
         <Reveal delay={80}>
-          <ul className="mt-8 grid gap-2 sm:grid-cols-2">
+          <ul className="mt-5 grid gap-1.5 sm:grid-cols-2">
             {promo.items.map((item) => (
               <li
                 key={item}
-                className="rounded-xl border border-white/15 bg-white/10 px-4 py-3 text-sm text-cream backdrop-blur-sm"
+                className="rounded-lg border border-white/15 bg-white/10 px-3 py-2 text-xs leading-snug text-cream backdrop-blur-sm sm:text-sm"
               >
                 {item}
               </li>
@@ -58,13 +62,13 @@ export function WeekendDeals() {
         </Reveal>
 
         <Reveal delay={120}>
-          <div className="mt-8">
+          <div className="mt-5">
             <LinkButton
               href={whatsappOrderLink(promo.title)}
               target="_blank"
               rel="noopener noreferrer"
               variant="secondary"
-              size="lg"
+              size="md"
               className="bg-cream text-dark hover:bg-white"
             >
               {promo.cta}
