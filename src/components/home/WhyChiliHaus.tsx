@@ -21,15 +21,15 @@ const icons = {
 
 export function WhyChiliHaus() {
   return (
-    <section id="why" className="scroll-mt-28 bg-white py-8 sm:py-10 lg:py-12">
+    <section className="bg-white py-6 sm:py-8 lg:py-10">
       <Container>
         <Reveal>
-          <h2 className="text-center font-display text-2xl tracking-tight text-dark sm:text-3xl lg:text-4xl">
+          <h2 className="text-center font-display text-2xl tracking-tight text-dark sm:text-3xl">
             Why People Choose Chili Haus
           </h2>
         </Reveal>
 
-        <div className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-5 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {whyChiliHaus.map((item, index) => {
             const Icon = icons[item.id as keyof typeof icons];
             return (

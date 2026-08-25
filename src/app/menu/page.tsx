@@ -21,10 +21,7 @@ export default function MenuPage() {
       <section className="border-b border-dark/8 bg-cream-deep/50 py-6 sm:py-8">
         <Container>
           <Reveal>
-            <p className="text-[11px] font-semibold uppercase tracking-[0.16em] text-chili-red">
-              Chili Haus Menu
-            </p>
-            <h1 className="mt-1 font-display text-3xl tracking-tight text-dark sm:text-4xl">
+            <h1 className="font-display text-3xl tracking-tight text-dark sm:text-4xl">
               Order from the Menu
             </h1>
             <p className="mt-1 max-w-2xl text-sm text-muted">

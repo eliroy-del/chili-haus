@@ -5,7 +5,6 @@ import { FeaturedProducts } from "@/components/home/FeaturedProducts";
 import { Hero } from "@/components/home/Hero";
 import { MealPackages } from "@/components/home/MealPackages";
 import { WeekendDeals } from "@/components/home/WeekendDeals";
-import { WhyChiliHaus } from "@/components/home/WhyChiliHaus";
 
 export default function HomePage() {
   return (
@@ -13,7 +12,6 @@ export default function HomePage() {
       <Hero />
       <CategoryNav />
       <FeaturedProducts />
-      <WhyChiliHaus />
       <Categories />
       <MealPackages />
       <WeekendDeals />

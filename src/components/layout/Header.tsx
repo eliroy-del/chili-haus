@@ -29,8 +29,8 @@ const navLinks: NavItem[] = [
       { href: "/#meal-packages", label: "Meal Packages" },
     ],
   },
-  { href: "/#why", label: "About" },
-  { href: "/#contact", label: "Contact" },
+  { href: "/about", label: "About" },
+  { href: "/contact", label: "Contact" },
 ];
 
 export function Header() {

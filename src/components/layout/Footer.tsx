@@ -7,6 +7,8 @@ import type { SVGProps } from "react";
 const explore = [
   { href: "/", label: "Home" },
   { href: "/menu", label: "Menu" },
+  { href: "/about", label: "About" },
+  { href: "/contact", label: "Contact" },
   { href: "/menu#soups", label: "Soups" },
   { href: "/#meal-packages", label: "Meal Packages" },
   { href: "/menu#freezer", label: "Freezer Friendly" },
@@ -32,7 +34,7 @@ function SnapchatIcon(props: SVGProps<SVGSVGElement>) {
 
 export function Footer() {
   return (
-    <footer id="contact" className="scroll-mt-28 bg-dark text-cream">
+    <footer className="bg-dark text-cream">
       <div className="mx-auto grid max-w-7xl gap-10 px-4 py-14 sm:px-6 lg:grid-cols-12 lg:px-8 lg:py-16">
         <div className="lg:col-span-4">
           <div className="flex items-center gap-3">
