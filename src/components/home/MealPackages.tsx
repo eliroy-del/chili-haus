@@ -19,8 +19,7 @@ export function MealPackages() {
                 Feed the Crowd
               </h2>
               <p className="mt-1.5 max-w-xl text-sm text-muted sm:text-base">
-                Family gatherings, office lunches, parties and events — Chili
-                Haus prepares meal packages that fit.
+                Family gatherings, office lunches, parties and events.
               </p>
             </div>
           </Reveal>

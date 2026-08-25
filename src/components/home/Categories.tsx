@@ -12,8 +12,7 @@ export function Categories() {
             Something for Every Craving
           </h2>
           <p className="mt-1.5 max-w-2xl text-sm text-muted">
-            Meals, freezer packs, sauces, baked foods and bulk orders — pick a
-            lane and dig in.
+            Meals, freezer packs, sauces, baked foods and bulk orders.
           </p>
         </Reveal>
 
