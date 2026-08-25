@@ -3,8 +3,10 @@ import { Container } from "@/components/ui/Container";
 import { LinkButton } from "@/components/ui/LinkButton";
 import { Reveal } from "@/components/ui/Reveal";
 import { occasions } from "@/data/categories";
+import { mealImages } from "@/data/images";
 import { businessConfig } from "@/lib/config";
 import type { Metadata } from "next";
+import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "About",
@@ -19,16 +21,30 @@ export default function AboutPage() {
     <>
       <section className="border-b border-dark/8 bg-cream-deep/50 py-6 sm:py-8">
         <Container>
-          <Reveal>
-            <h1 className="font-display text-3xl tracking-tight text-dark sm:text-4xl">
-              About Chili Haus
-            </h1>
-            <p className="mt-1 max-w-2xl text-sm text-muted">
-              {businessConfig.tagline}. We prepare local and continental meals,
-              freezer-friendly foods, baked treats, sauces and meal packages for
-              Accra.
-            </p>
-          </Reveal>
+          <div className="grid items-center gap-5 lg:grid-cols-12 lg:gap-8">
+            <Reveal className="lg:col-span-6">
+              <h1 className="font-display text-3xl tracking-tight text-dark sm:text-4xl">
+                About Chili Haus
+              </h1>
+              <p className="mt-1 max-w-xl text-sm text-muted">
+                {businessConfig.tagline}. We prepare local and continental meals,
+                freezer-friendly foods, baked treats, sauces and meal packages for
+                Accra.
+              </p>
+            </Reveal>
+            <Reveal delay={40} className="lg:col-span-6">
+              <div className="relative aspect-[16/10] overflow-hidden rounded-xl sm:aspect-[5/3] lg:aspect-[16/10]">
+                <Image
+                  src={mealImages.lunchPlate}
+                  alt="Chili Haus meal plate with rice, stew and sides"
+                  fill
+                  sizes="(max-width: 1024px) 100vw, 50vw"
+                  className="object-cover"
+                  priority
+                />
+              </div>
+            </Reveal>
+          </div>
         </Container>
       </section>
 

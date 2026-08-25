@@ -19,6 +19,9 @@ export const businessConfig = {
     snapchat: process.env.NEXT_PUBLIC_SNAPCHAT_HANDLE ?? "Efuaa othoniel",
   },
   location: "Accra, Ghana",
+  mapsUrl: "https://maps.app.goo.gl/Dw3WdbkwxWMh1neC8",
+  /** Approximate pin for embed (from Google Maps share link). */
+  mapsEmbedQuery: "5.7762222,-0.3243056",
   deliveryArea: "Accra",
   deliveryNote: "Delivery available within Accra at an additional fee.",
   currency: "GH₵",

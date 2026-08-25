@@ -88,8 +88,20 @@ export default function ContactPage() {
             />
             <ContactCard
               icon={<MapPin className="size-5" />}
-              title="Service area"
+              title="Location"
               body={businessConfig.location}
+              action={
+                <LinkButton
+                  href={businessConfig.mapsUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  variant="outline"
+                  size="sm"
+                  className="mt-3"
+                >
+                  Open in Google Maps
+                </LinkButton>
+              }
             />
             <ContactCard
               icon={<InstagramIcon className="size-5" />}
@@ -109,6 +121,36 @@ export default function ContactPage() {
               }
             />
           </div>
+
+          <Reveal delay={40}>
+            <div className="mt-6 overflow-hidden rounded-xl border border-dark/10 bg-white">
+              <div className="flex items-center justify-between gap-3 border-b border-dark/8 px-4 py-3">
+                <div>
+                  <h2 className="text-sm font-semibold text-dark">Find us</h2>
+                  <p className="text-xs text-muted">{businessConfig.location}</p>
+                </div>
+                <LinkButton
+                  href={businessConfig.mapsUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  variant="outline"
+                  size="sm"
+                >
+                  Open Maps
+                </LinkButton>
+              </div>
+              <div className="relative aspect-[16/10] w-full sm:aspect-[21/9]">
+                <iframe
+                  title="Chili Haus location on Google Maps"
+                  src={`https://maps.google.com/maps?q=${businessConfig.mapsEmbedQuery}&z=16&output=embed`}
+                  className="absolute inset-0 h-full w-full border-0"
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  allowFullScreen
+                />
+              </div>
+            </div>
+          </Reveal>
 
           <Reveal delay={60}>
             <p className="mt-6 text-center text-sm text-muted">
